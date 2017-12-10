@@ -6,8 +6,8 @@ const staticFiles = require('koa-static')
 const miSend = require('./mi-send')
 
 module.exports = (app) => {
-  
-  app.use(staticFiles(path.resolve(__dirname, "./public")))
+
+  app.use(staticFiles(path.resolve(__dirname, "../public")))
   
   app.use(nunjucks({
     ext: 'html',
